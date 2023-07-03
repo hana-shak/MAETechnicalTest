@@ -194,9 +194,11 @@
  
     <!-- SECTION FOUR BEGINS HERE -->
       <section>
-          <div class="container p-1 " id="contentOfFour">
-              <div id="InsidecontentOfFour">
-                  <a href="" class="btn">ICON MUST BE ADDED</a>
+          <div class="container py-2 " id="contentOfFour">
+              <div id="InsidecontentOfFour"  >
+                <div class="IconContainer">
+                    <i class="fa-solid fa-crown fa-2xl"></i>
+                </div>
                   <h2>Get Started With <span>Eatly</span></h2>
                   <p > eliobcaecati ullam debitis? Architecto optio blanditiis, 
                                possimus inventore qui atque non mollitia?
@@ -212,22 +214,71 @@
         <div class="container">
            <div class="articles-container ">  
                <div class="card"> 
-                   <div id="leftSide">
-                    <div class="py-1" id="fourthTitle">
-                        <h4>Try Our Healthy Menu</h4>
+                   <div id="leftSide py-1">
+                     <div class="py-1" id="fourthTitle">
+
+                        <div class="sameLine">
+                                <i class=" IconContainer fa-solid fa-crown fa-xl"></i>
+                                <h4>Try Our Healthy Menu</h4>
+                        </div>
+
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure,
                             dolore! Enim velit deleniti labore maiores rerum?
                         </p>
+
                         <div class="scrollableList listingSt">
-                             <div class="items bg-primary">
-                                 <p class="SingleItem py-1 ">BreakFast Recipies</p>
-                                 <p class="SingleItem py-1">Holiday Recipies</p>
-                                 <p class="SingleItem py-1">Restriction Recipies</p>
-                                 <p class="SingleItem py-1">Low-calories Recipies</p>
-                                 <p class="SingleItem py-1">BreakFast Recipies</p>
-                                 <p class="SingleItem py-1">BreakFast Recipies</p>
-                                 <p class="SingleItem py-1">BreakFast Recipies</p>
-                                 <p class="SingleItem py-1">BreakFast Recipies</p>
+                             <div class="items">
+
+                                <div class="SingleItem py-1 sameLine ">
+                                    <div class="IconContainer ">
+                                        <i class="fa-solid fa-crown fa-xl"></i>
+                                    </div>
+                                    <p>BreakFast Recipies</p>
+                                 </div>
+
+                                 <div class="SingleItem py-1 sameLine ">
+                                    <div class="IconContainer bg">
+                                        <i class="fa-solid fa-crown fa-xl"></i>
+                                    </div>
+                                    <p>Low-calories Recipies</p>
+                                 </div>
+
+                                 <div class="SingleItem py-1 sameLine ">
+                                    <div class="IconContainer bg">
+                                        <i class="fa-solid fa-crown fa-xl"></i>
+                                    </div>
+                                    <p>Restriction Recipies</p>
+                                 </div>
+
+                                 <div class="SingleItem py-1 sameLine ">
+                                    <div class="IconContainer bg">
+                                        <i class="fa-solid fa-crown fa-xl"></i>
+                                    </div>
+                                    <p>Holiday Recipies</p>
+                                 </div>
+                                 <div class="SingleItem py-1 sameLine ">
+                                    <div class="IconContainer bg">
+                                        <i class="fa-solid fa-crown fa-xl"></i>
+                                    </div>
+                                    <p>Low-calories Recipies</p>
+                                 </div>
+
+                                 <div class="SingleItem py-1 sameLine ">
+                                    <div class="IconContainer bg">
+                                        <i class="fa-solid fa-crown fa-xl"></i>
+                                    </div>
+                                    <p>Restriction Recipies</p>
+                                 </div>
+
+                                 <div class="SingleItem py-1 sameLine ">
+                                    <div class="IconContainer bg">
+                                        <i class="fa-solid fa-crown fa-xl"></i>
+                                    </div>
+                                    <p>Holiday Recipies</p>
+                                 </div>
+                                
+                                 
+                                
                              </div>
 
                         </div>
@@ -236,44 +287,36 @@
                    </div>
 
                    <div id="rightSide " class="p-1">
-                                <h2>Our Value To Help You</h2>
+                        <div>
+                            <!-- JS Functionality not done yet -->
+                            <span>
+                                <a class="prev" id="rightbtn" onclick="firstClick()" >
+                                    <i class="fa-solid fa-angle-left fa-lg btn-play prev"></i></a>
+                                <a class="next" id="leftttbtn" onclick="secondClick()" >
+                                    <i class="fa-solid fa-angle-right fa-lg btn-play next"></i></a>
+                            </span>
+                        </div>
+
+
+                        <div class="card p-1" id="domeCard">
+                            <div id="rightelement" class="switchingTwo">
+                                <img src="/marketing.png" alt="">
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure,
-                                  dolore! Enim velit deleniti labore maiores rerum?
-                                </p>
-                                <div>
-                                    <!-- JS Functionality not done yet -->
-                                    <span>
-                                        <a class="prev" id="rightbtn" onclick="firstClick()" >
-                                            <i class="fa-solid fa-angle-left fa-lg btn-play prev"></i></a>
-                                        <a class="next" id="leftttbtn" onclick="secondClick()" >
-                                            <i class="fa-solid fa-angle-right fa-lg btn-play next"></i></a>
-                                    </span>
-
-                                </div>
-
-                                <div class="card p-1" >
-                                    <div id="rightelement" class="switchingTwo">
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure,
-                                            dolore!
-                                         </p>
-                                        <a  class="btn" href="article.html">Lorem </a>
-                                    </div>
-
-
-                                   <div id="leftelement" class="switchingTwo">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure,
-                                        dolore!
-                                     </p>
-                                    <a class="btn" href="article.html">Ipsum</a>
-                                   </div>
-
-                                </div>
+                                    dolore!
+                                 </p>
+                                <a  class="btn" href="article.html">Lorem </a>
+                            </div>
+                            <div id="leftelement" class="switchingTwo">
+                                <img src="/marketing.png" alt="">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure,
+                                    dolore!
+                                 </p>
+                                <a class="btn" href="article.html">Ipsum</a>
+                            </div>
+                        </div>
                           
                    </div>
-               </div> 
-
-
-                
+               </div>   
             </div>
         </div>
     </section>  
@@ -288,30 +331,42 @@
                     <img src="./img/articles/ent1.jpg" alt="Entartainment">
                    </div>
 
-                   <div id="rightSide " class="p-1">
-                          <h2>Our Value To Help You</h2>
+                     <div id="rightSide " class="p-1">
+                          <div class="sameLine">
+                             <i class=" IconContainer fa-solid fa-crown fa-xl"></i>
+                             <h2>Our Value To Help You</h2>
+                          </div>
+                          
                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure,
                             dolore! Enim velit deleniti labore maiores rerum?
                          </p>
-                         <div>
-                            <span>
-                                <a class="prev" onclick="plusingSlides(-1)">
-                                    <i class="fa-solid fa-angle-left fa-lg btn-play prev"></i></a>
-                                <a class="next" onClick="plusingSlides(+1)">
-                                    <i class="fa-solid fa-angle-right fa-lg btn-play next"></i></a>
-                            </span>
+                        
+                            <div class="card p-1 " id="bigBoss">
 
-                            <div class="card p-1">
+                                <span id="insideTheCard">
+                                    <a class="prev" onclick="plusingSlides(-1)">
+                                        <i class="fa-solid fa-angle-left fa-lg btn-play prev"></i></a>
+                                    <a class="next" onClick="plusingSlides(+1)">
+                                        <i class="fa-solid fa-angle-right fa-lg btn-play next"></i></a>
+                                </span>
+
                                 <div class="mySixththSlide">
+                                    <div class="containerForIcon">
+                                        <i class="fa-solid fa-crown fa-2xl"></i>
+                                    </div>
                                     <h3>
                                         <a href="article.html">Lorem ipsum dolor sit amet consectetur.</a>
                                      </h3>
                                      <p>OOONNNEEEEE ,,,Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure,
                                         dolore! Enim velit deleniti labore maiores rerum?
                                      </p>
+                                     
                                 </div>
     
                                 <div class="mySixththSlide">
+                                    <div class="containerForIcon">
+                                        <i class="fa-solid fa-crown fa-2xl"></i>
+                                    </div>
                                       <h3>
                                           <a href="article.html">Lorem ipsum dolor sit amet consectetur.</a>
                                        </h3>
@@ -321,6 +376,9 @@
                                 </div>
     
                                 <div class="mySixththSlide">
+                                    <div class="containerForIcon">
+                                        <i class="fa-solid fa-crown fa-2xl"></i>
+                                    </div>
                                     <h3>
                                         <a href="article.html">Lorem ipsum dolor sit amet consectetur.</a>
                                      </h3>
@@ -328,8 +386,10 @@
                                         dolore! Enim velit deleniti labore maiores rerum?
                                      </p>
                                 </div>
+                            
                             </div>
-                         </div>
+
+                     </div>
                    </div>
                </div>    
             </div>
@@ -340,14 +400,20 @@
 
     <!-- ************************************************************************************************************************************ -->
     <!-- FOOTER -->
-    <footer id="main-footer" class="py-2">
+    <footer id="main-footer">
         <div class="container footer-container" >
             <div id="eatlyLEft">
-                <h2>Eatly</h2>
+                <div class="sameLine">
+                    <i class=" IconContainer fa-solid fa-crown fa-xl"></i>
+                    <h2>Eatly</h2>
+                 </div>
+                 
+                
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                    Adipisci neque ut corporis,   
                 </p>
             </div>
+
             <div>
                 <h3>About</h3>
                 <ul class="list">
