@@ -249,6 +249,9 @@ p{
     color:#fff
 }
 
+.m-1{
+    margin-top:1.5em;
+}
 .py-1{padding: 1.5rem 0}
 .py-2{padding: 2rem 0}
 .py-3{padding: 3rem 0}
@@ -277,9 +280,10 @@ p{
 #showcase .showcase-container{
     display:grid;
     grid-template-columns: repeat(2, 1fr);
-    height:50vh;
+    height:65vh;
     justify-content: center;
     align-items: center;
+   
 
 }
 
@@ -314,6 +318,25 @@ background-color: lightblue;
 }
 
 /* Task - Section Two ,,, Our Programs */
+.sameLine{
+    display:flex;
+    align-items: flex-start;
+}
+ /* Trying to do tthe border edges */
+
+/* #OnITs1, #OnITs4  */
+
+#roundedEdges #OnITs1
+{
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+
+}
+#roundedEdges #OnITs4
+{   
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+} 
 .title-container {
     padding:1em;
     display: flex;
@@ -321,6 +344,8 @@ background-color: lightblue;
 }
 #OnITs1:hover , #OnITs2:hover,
 #OnITs3:hover,#OnITs4:hover {
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
     transform: scale(1.1)  ;
     background-color: var(--yellow-color) !important;
 }
@@ -337,16 +362,49 @@ background-color: lightblue;
 /* Third Section */
  #third-article .container .articles-container .card{
     display:grid;
-    grid-template-columns:repeat(2, 2fr)
+    grid-template-columns:repeat(2, 2fr);
+    grid-gap:.5em
+
 } 
 
+#leftSide{
+    justify-self: center;
+    justify-content: center;
+    margin: auto;
+}
 #third-article .container .articles-container .card:first-child{
-    background-color: var(--primary-color);
-    grid-column:1 /span2
+    /* background-color: var(--primary-color); */
+    grid-column:1 / span 2;
+    
+
 }
 
 #third-article .container  .articles-container .card:nth-child(2){
     background-color: red;
+}
+
+#cardsForSectionthree > div{
+
+    position:relative;
+    margin: .5em;
+    border-radius: 25px;
+    border:3px var(--secondary-color) solid;
+   background-color: aqua;    
+}
+#cardsForSectionthree > div > p ,
+#cardsForSectionthree > div > h6{
+    padding:.2em;
+    text-align: center;
+}
+
+.containerForIcon{
+    z-index: 3;
+    padding:0.5em;
+    background-color: blueviolet;
+    position: absolute;
+    top:-23px;
+    left:10px;
+    border-radius:15px;
 }
 
 
