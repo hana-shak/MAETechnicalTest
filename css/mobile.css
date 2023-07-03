@@ -73,7 +73,50 @@
     grid-row: 1 ;
 }
 
+.sameLine{
+    flex-direction: column;
+}
+#third-article #third-article .container .articles-container .card,
+#third-article .container .articles-container .card:first-child,
+#contentOfFour,#InsidecontentOfFour,#InsidecontentOf6TH,
+#InsidecontentOf6TH .container .articles-container .card:first-child,
+#main-footer .footer-container,#eatlyLEft,#downBottom,#downBottom > :nth-child(1){
+    
+    grid-template-columns:1fr;
 
+}
+
+#sixImg, #thirdImg{
+    display:none;
+}
+.mySixththSlide, .switchingTwo{
+    align-self: flex-start;
+    justify-content:left;
+    padding:.2em
+}
+#domeCard > div {
+    margin: .2em;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+#bigBoss #insideTheCard { 
+    /* border: mediumvioletred 2px solid; */
+    position: absolute;
+    bottom:0;
+    right:0;
+    z-index: 5;
+
+}
+.SingleItem{
+    margin:.3em;
+    
+}
+
+/* #bigBoss{
+   width:50px;
+}  */
 /* 
-
+grid-template-columns:1fr;
+grid-column: 1;
 */

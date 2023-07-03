@@ -207,7 +207,6 @@ p{
 
 .page-container > *:last-child a{
     width:80%
-
 }
 
 
@@ -385,12 +384,11 @@ background-color: lightblue;
 /* }  */
 
 #cardsForSectionthree > div{
-
     position:relative;
     margin: .5em;
     border-radius: 25px;
     border:3px var(--secondary-color) solid;
-   background-color: aqua;    
+    background-color: aqua;    
 }
 #cardsForSectionthree > div > p ,
 #cardsForSectionthree > div > h6{
