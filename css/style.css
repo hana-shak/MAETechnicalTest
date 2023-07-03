@@ -335,12 +335,52 @@ background-color: lightblue;
 /* End of Second Section */
 
 /* Third Section */
-/* #third-article .articles-container .article{
+ #third-article .container .articles-container .card{
     display:grid;
     grid-template-columns:repeat(2, 2fr)
-} */
+} 
+
+#third-article .container .articles-container .card:first-child{
+    background-color: var(--primary-color);
+    grid-column:1 /span2
+}
+
+#third-article .container  .articles-container .card:nth-child(2){
+    background-color: red;
+}
 
 
+/* Fourth Section */
+#contentOfFour{
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);    
+}
+
+#InsidecontentOfFour{
+    grid-column:2 /span 2;
+    background-color: var(--primary-color);
+    justify-content: stretch;
+    justify-self: center;
+    align-self: center;
+    align-items: center;
+}
+
+.items{
+   width:60%;
+   background-color: #f99500; 
+   max-height: 250px;
+   overflow-y: scroll;
+}
+
+/* 6TH SECTION */
+#InsidecontentOf6TH{
+    display:grid;
+    grid-template-columns:repeat(2, 2fr)
+}
+
+#InsidecontentOf6TH .container .articles-container .card:first-child{
+    GRID-COLUMN:1 /span 2
+}
 
 /* Footer */
 #main-footer .footer-container{
@@ -360,6 +400,7 @@ background-color: lightblue;
     align-self: stretch;  
     /* background-color: var(--dark-color); */
 }
+
 #eatlyLEft{
     align-self: stretch;  
     justify-self: top;
@@ -367,15 +408,16 @@ background-color: lightblue;
     width:50%;
     background-color: var(--primary-color);
     grid-column:1 / span 3;
-    
 }
 
 #main-footer img{
     width:150px;
 }
+
 #main-footer a {
     color:var(--ent-color);
 }
+
 #downBottom{
     display:grid;
     grid-template-columns: repeat(3, 1fr);
@@ -390,11 +432,13 @@ background-color: lightblue;
 .container #downBottom{
     background-color: lightseagreen;
 }
+
 #downBottom > :nth-child(1){
     grid-column: 1 /span 2;
     /* border: 3px yellowgreen solid; */
     justify-self: left;
 }
+
 #downBottom > :nth-child(2){
    display: flex;
    justify-content:space-around;
@@ -411,7 +455,6 @@ background-color: lightblue;
 
 .list li a:hover{
     color: var(--primary-color) !important;
-
 }
 
 .container .footer-container > div:nth-child(2){
